@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from pathlib import Path
 from joblib import load
 import numpy as np
-import json
 
 project_path = Path(__file__).resolve().parents[2]
 model_path = project_path / "models" / "model.joblib"
@@ -31,7 +30,30 @@ class Patient(BaseModel):
             }
         }
 
-app = FastAPI(title="Diabetes Prediction Model API")
+description = (
+    """Features:
+
+    pregnancies: Number of times pregnant
+
+    glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+
+    blood_pressure: Diastolic blood pressure (mm Hg)
+
+    skin_thickness: Triceps skin fold thickness (mm)
+
+    insulin: 2-Hour serum insulin (mu U/ml)
+
+    bmi: Body mass index (weight in kg/(height in m)^2)
+
+    diabetes_pedigree_function: Diabetes pedigree function
+
+    age: age in years
+"""
+)
+
+app = FastAPI(
+    title="Diabetes Prediction Model API",
+    description=description)
 
 @app.on_event("startup")
 def load_model():
@@ -63,7 +85,6 @@ def get_patient_to_predict(data: Patient):
         diabetes_pedigree_function,
         age
     ]).reshape(1, -1))
-    # return json.dumps(pred_proba.tolist()[0][0])
     if pred_proba[0][0] > pred_proba[0][1]:
         predicted_class = "does not have diabetes"
         percentage = pred_proba[0][0] 
