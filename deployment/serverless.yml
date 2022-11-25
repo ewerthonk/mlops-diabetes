@@ -1,0 +1,27 @@
+service: deployment
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  stage: dev
+  region: sa-east-1
+
+functions:
+  predict:
+    handler: handler.predict
+
+plugins:
+  - serverless-python-requirements
+	
+package:
+  patterns:
+    - '!venv/**'
+    - '!__pycache__/**'
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+    zip: true
+    slim: true

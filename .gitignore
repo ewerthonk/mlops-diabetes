@@ -94,3 +94,9 @@ catboost_info/
 
 # Mypy cache
 .mypy_cache/
+
+# Serverless directories
+.serverless
+
+# Temporary directory
+.tmp
