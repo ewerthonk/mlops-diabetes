@@ -18,7 +18,7 @@
 ## 👨🏻‍🏫 Introduction
 The focus of this project is on the productionizing/operation of a serverless Machine Learning on AWS.
 
-I chose a simple dataset from the US National Institute of Diabetes and Digestive and Kidney Diseases: Pima Indian Diabetes. The dataset presents diagnostic measurements from female patients of at least 21 years old of Pima heritage as variables and indicates if the patient has or has not diabetes as an outcome.
+I chose a simple dataset from the US National Institute of Diabetes, Digestive and Kidney Diseases: Pima Indian Diabetes. The dataset presents diagnostic measurements from female patients of at least 21 years old of Pima heritage as variables and indicates if the patient has or has not diabetes as an outcome.
 
 A quick process of ML is developed in the notebook of the project. Data is ingested from AWS S3, the model - that predicts if a patient has diabetes or not based on 8 medical exam features - is created locally and deployed using serverless framework to AWS Lambda. Then, AWS API Gateway makes it available for the public.
 
