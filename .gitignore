@@ -75,12 +75,6 @@ target/
 # Jupyter NB Checkpoints
 .ipynb_checkpoints/
 
-# exclude everything in every folder of data
-/data/**/*.*
-
-# include only .gitkeep files
-!/data/**/*.gitkeep
-
 # Mac OS-specific storage files
 .DS_Store
 
