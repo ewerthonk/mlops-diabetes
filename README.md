@@ -26,8 +26,10 @@ https://q6l78vh36a.execute-api.sa-east-1.amazonaws.com/development/lambda-predic
 
 (You may change the parameters directly on the URL to get different predictions)
 
-## 📈 Features
+## 🎯 Goal
+Deploy serverless Machine Learning predictions on AWS.
 
+## 📈 Features
 | Feature                  | Description                                                                           |
 |--------------------------|---------------------------------------------------------------------------------------|
 | `pregnancies`            | Number of pregnancies the patient had.                                               |
@@ -37,10 +39,7 @@ https://q6l78vh36a.execute-api.sa-east-1.amazonaws.com/development/lambda-predic
 | `insulin`                | 2-Hour serum insulin exam (mu U/ml).                                                 |
 | `bmi`                    | Body mass index (weight in kg/(height in m)^2).                                      |
 | `diabetes_pedigree_function` | Genetic predisposition to diabetes (from 0 to 1).                                   |
-| `age`                    | Patient age.                                                                         |
-
-## 🎯 Goal
-Deploy serverless Machine Learning predictions on AWS.
+| `age`                    | Patient age.    
 
 ## 📊 Results
 The model achieved an accuracy of 72% and an ROC-AUC of 71%.
@@ -62,7 +61,7 @@ The model achieved an accuracy of 72% and an ROC-AUC of 71%.
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         and a short `-` delimited description, e.g.
-    │                         `1.0--creating-the-model`.
+    │                         `1.0--creating-the-model.ipynbß`.
     │
     ├── deployment         <- All files dockerized and deployed to AWS Lambda, like "handler.py".
     │
