@@ -1,5 +1,7 @@
 # Machine Learning Operations - Diabetes
 
+*Serverless machine learning batch prediction on AWS.*
+
 <div align="center">
 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
 <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white">
@@ -9,11 +11,9 @@
 <img src="https://img.shields.io/badge/makefile-%230C22D9.svg?style=for-the-badge&logo=gnu&logoColor=white">
 </div>
 
-*Serverless machine learning batch prediction on AWS.*
-
 # 📖 Project
 
-## 👨🏻‍🏫 Introduction
+### 👨🏻‍🏫 Introduction
 The focus of this project is on the productionizing/operation of a serverless Machine Learning model on AWS.
 
 A simple dataset was chosen for this task ([US National Institute of Diabetes, Digestive and Kidney Diseases: Pima Indian Diabetes](#-features)). The dataset presents diagnostic measurements from female patients of at least 21 years old of Pima heritage as variables and indicates if the patient has or does not have diabetes.
@@ -26,10 +26,13 @@ https://q6l78vh36a.execute-api.sa-east-1.amazonaws.com/development/lambda-predic
 
 (You may change the parameters directly on the URL to get different predictions)
 
-## 🎯 Goal
+### 🎯 Goal
 Deploy serverless Machine Learning predictions on AWS.
 
-## 📈 Features
+### 📊 Results
+The model achieved an accuracy of 72% and an ROC-AUC of 71%.
+
+### 📈 Features
 | Feature                  | Description                                                                           |
 |--------------------------|---------------------------------------------------------------------------------------|
 | `pregnancies`            | Number of pregnancies the patient had.                                               |
@@ -41,8 +44,6 @@ Deploy serverless Machine Learning predictions on AWS.
 | `diabetes_pedigree_function` | Genetic predisposition to diabetes (from 0 to 1).                                   |
 | `age`                    | Patient age.    
 
-## 📊 Results
-The model achieved an accuracy of 72% and an ROC-AUC of 71%.
 
 # 🗺  Methodology
 ![Project](references/mlops-diabetes.png)
