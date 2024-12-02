@@ -44,7 +44,6 @@ The model achieved an accuracy of 72% and an ROC-AUC of 71%.
 | `diabetes_pedigree_function` | Genetic predisposition to diabetes (from 0 to 1).                                   |
 | `age`                    | Patient age.    
 
-
 # 🗺  Methodology
 ![Project](references/mlops-diabetes.png)
 
