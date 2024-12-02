@@ -48,7 +48,8 @@ The model achieved an accuracy of 72% and an ROC-AUC of 71%.
 ![Project](references/mlops-diabetes.png)
 
 # 🗄 Notebooks
-[1.0-creating-the-model.ipynb](/notebooks/1.0-creating-the-model.ipynb)
+
+- [1.0-creating-the-model.ipynb](/notebooks/1.0-creating-the-model.ipynb)
 
 # 📦 Folder Structure
 
