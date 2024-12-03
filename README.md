@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/badge/makefile-%230C22D9.svg?style=for-the-badge&logo=gnu&logoColor=white">
 </div>
 
-# 📖 Project
+## 📖 Project
 
 ### 👨🏻‍🏫 Introduction
 The focus of this project is on the productionizing/operation of a serverless Machine Learning model on AWS.
@@ -44,14 +44,14 @@ The model achieved an accuracy of 72% and an ROC-AUC of 71%.
 | `diabetes_pedigree_function` | Genetic predisposition to diabetes (from 0 to 1).                                   |
 | `age`                    | Patient age.    
 
-# 🗺  Methodology
+## 🗺  Methodology
 ![Project](references/mlops-diabetes.png)
 
-# 🗄 Notebooks
+## 🗄 Notebooks
 
 - [1.0-creating-the-model.ipynb](/notebooks/1.0-creating-the-model.ipynb)
 
-# 📦 Folder Structure
+## 📦 Folder Structure
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make deploy_model`
