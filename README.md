@@ -1,6 +1,10 @@
 # Machine Learning Operations - Diabetes
 
-*Serverless machine learning batch prediction on AWS.*
+<div align="center">
+  <em>Serverless machine learning batch prediction on AWS.</em>
+</div>
+
+<br>
 
 <div align="center">
 <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
